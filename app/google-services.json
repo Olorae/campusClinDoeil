@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "124036809723",
+    "project_id": "campus-clin-d-oeil",
+    "storage_bucket": "campus-clin-d-oeil.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:124036809723:android:1ba5df6557e9bb3b87015e",
+        "android_client_info": {
+          "package_name": "uqac.dim.campusclindoeil"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDsMtqg6hYXrBraCQjY0ivGYQmS4vTbpk4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
