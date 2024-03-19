@@ -1,7 +1,18 @@
 package uqac.dim.campusclindoeil;
 
+import static uqac.dim.campusclindoeil.MySQLDataAccess.insertUtilisateur;
+
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
+import android.view.View;
+import android.widget.Button;
+
+// MySQL
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
 
 import com.google.firebase.FirebaseApp;
 import com.google.firebase.FirebaseOptions;
@@ -19,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        findViewById(R.id.bouton).setOnClickListener(this::boutonClicked);
 
         try {
             FileInputStream refreshToken = new FileInputStream("C:\\Users\\Coralie\\Documents\\Informatique mobile\\Travail_de_fin_session\\CampusClinDOeil\\app\\google-services.json");
@@ -42,5 +54,22 @@ public class MainActivity extends AppCompatActivity {
                 PlayIntegrityAppCheckProviderFactory.getInstance());
         */
     }
+
+    private void boutonClicked(View v){
+        insertUtilisateur("coral908", "coraliet8@hotmail.com", "sagym8");
+    }
+
+    // connexion à votre base de données MySQL
+
+
+    // requêtes SQL pour interagir avec votre base de données
+
+
+        /*
+        Appelez les méthodes appropriées de connexion et d'exécution de requêtes SQL dans votre application Android.
+        Par exemple, vous pouvez appeler insertUtilisateur("John Doe", "john@example.com", "motdepasse123");
+        pour insérer un nouvel utilisateur dans la base de données.
+         */
+
 
 }

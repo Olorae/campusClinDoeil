@@ -60,4 +60,5 @@ dependencies {
     implementation("com.google.firebase:firebase-firestore")
     implementation ("com.google.firebase:firebase-appcheck:23.0.0")
     implementation ("com.google.firebase:firebase-core:23.0.0")*/
+    implementation("mysql:mysql-connector-java:8.0.28")
 }
